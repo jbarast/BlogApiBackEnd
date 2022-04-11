@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BlogApiBackEnd.Domain.Contracts.DomainService
 {
-    public interface IDSArticle
+    public interface IDsArticle
     {
         Task<Article> Insert(Article article);
         Article Modify(Article article);
