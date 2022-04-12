@@ -10,13 +10,15 @@ namespace BlogApiBackEnd.Infrastructure.EF.UnitOfWork
     {
 
         private readonly BlogContext _context;
+        public IArticleRepository Articles { get; }
 
-        public UnitOfWork(BlogContext context)
+        public UnitOfWork(BlogContext context, IArticleRepository articleRepository)
         {
             _context = context;
+            Articles = articleRepository;
         }
 
-        public IArticleRepository Articles { get; }
+        
         
         public void Dispose()
         {

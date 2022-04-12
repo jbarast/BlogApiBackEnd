@@ -5,12 +5,16 @@
         <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
     </PropertyGroup>
 
-    <ItemGroup>
+    <ItemGroup>        
+        <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="5.0.16" />
+        <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
         <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Controllers" />
+      <ProjectReference Include="..\BlogApiBackEnd.DomainService\BlogApiBackEnd.DomainService.csproj" />
+      <ProjectReference Include="..\BlogApiBackEnd.Domain\BlogApiBackEnd.Domain.csproj" />
+      <ProjectReference Include="..\BlogApiBackEnd.Infrastructure.EF\BlogApiBackEnd.Infrastructure.EF.csproj" />
     </ItemGroup>
 
 </Project>
