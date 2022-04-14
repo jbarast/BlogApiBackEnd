@@ -1,0 +1,10 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=58be81c1_002D3bbb_002D493d_002D9110_002D186bff082771/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Test1" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;Or&gt;&#xD;
+    &lt;ProjectFile&gt;1F89C59C-49C6-4308-885A-9427942BDB88/d:Controllers/f:ArticleControllerTest.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;TestAncestor&gt;&#xD;
+      &lt;TestId&gt;xUnit::0BADAE27-80F9-487B-8C70-8E88B6694C13::net5.0::BlogApiBackEnd.DomainService.Test.DsArticleTest.GetAllArticle&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;xUnit::0BADAE27-80F9-487B-8C70-8E88B6694C13::net5.0::BlogApiBackEnd.DomainService.Test.DsArticleTest.GetCertainArticle&lt;/TestId&gt;&#xD;
+    &lt;/TestAncestor&gt;&#xD;
+  &lt;/Or&gt;&#xD;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

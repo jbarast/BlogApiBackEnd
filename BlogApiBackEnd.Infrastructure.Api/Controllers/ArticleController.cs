@@ -1,9 +1,11 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using BlogApiBackEnd.Domain.Contracts.DomainService;
 using BlogApiBackEnd.Domain.Entities;
+using BlogApiBackEnd.Infrastructure.Api.DTOs;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.JsonPatch.Adapters;
 using Microsoft.AspNetCore.Mvc;
@@ -38,9 +40,15 @@ namespace BlogApiBackEnd.Infrastructure.Api.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult<Article>> Post(Article article)
+        public async Task<ActionResult<Article>> Post(ArticleRequestDTO articleDTO)
         {
-            return await _dsArticle.Insert(article);
+            var articleToInsert = new Article
+            {
+                Content = articleDTO.Content,
+                Date = DateTime.Now,
+                Title = articleDTO.Title
+            };
+            return await _dsArticle.Insert(articleToInsert);
         }
 
         [HttpPut]

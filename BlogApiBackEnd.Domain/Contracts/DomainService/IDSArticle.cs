@@ -12,5 +12,7 @@ namespace BlogApiBackEnd.Domain.Contracts.DomainService
         Article Modify(Article article);
         void Delete(Article article);
         Task<IEnumerable<Article>> Get(Expression<Func<Article, bool>> where = null);
+
+        
     }
 }
