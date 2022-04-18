@@ -41,10 +41,12 @@ namespace BlogApiBackEnd.DomainService.Test
             _unitOfWorkMock.Setup(x => x.Articles.GetAll()).ReturnsAsync(articlesMockList);
 
             // Act
-            var res = _dsArticle.Get().Result;
+            var res = _dsArticle.Get().Result.ToArray();
 
             // Assert
             Assert.NotNull(res);
+            Assert.Equal(articlesMockList[0], res[0]);
+            Assert.Equal(articlesMockList[1], res[1]);
         }
 
         [Fact]
